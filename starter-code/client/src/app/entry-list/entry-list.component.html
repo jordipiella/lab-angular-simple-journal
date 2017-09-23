@@ -1,0 +1,5 @@
+<app-entry-form></app-entry-form>
+<ul>
+  <li *ngFor="let it of item">{{ it.title }}<br>{{ it.date | date:'medium' }}<br>
+  <a [routerLink]="['/journal-entries/', it._id]">Details</a></li>
+</ul>

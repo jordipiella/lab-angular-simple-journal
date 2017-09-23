@@ -1,0 +1,7 @@
+<form (ngSubmit)="submitForm(myForm)" #myForm="ngForm" novalidate>
+  <input type="text" #myTitle=ngModel name="newTitle" [(ngModel)]="newTitle" required/>
+  <textarea name="newContent" #myContent=ngModel [(ngModel)]="newContent" required></textarea>
+  <button type="submit">Add new item</button>
+</form>
+{{ newTitle }}
+{{ newContent }}
